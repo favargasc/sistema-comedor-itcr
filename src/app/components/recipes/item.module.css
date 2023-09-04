@@ -1,0 +1,21 @@
+.wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 11rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.img {
+  position: relative;
+  width: 17rem;
+  height: 9rem;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: large;
+  font-weight: bold;
+}

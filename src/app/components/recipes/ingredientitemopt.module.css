@@ -1,0 +1,12 @@
+.opt-module {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn {
+  display: block;
+  width: 4rem;
+  height: 1.8rem;
+  margin: 0.5rem;
+}

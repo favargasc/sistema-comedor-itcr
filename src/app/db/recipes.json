@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Ensalada César",
+    "ingredients": [
+      {
+        "product_description": "1 lechuga romana fresca"
+      },
+      {
+        "product_description": "1 taza de croutones (trozos de pan tostado)"
+      },
+      {
+        "product_description": "1/2 taza de queso parmesano rallado"
+      },
+      {
+        "product_description": "Pechuga de pollo a la parrilla (opcional)"
+      }
+    ],
+    "times": [
+      {
+        "desayuno": true
+      },
+      {
+        "almuerzo": false
+      },
+      {
+        "café": false
+      },
+      {
+        "cena": false
+      }
+    ]
+  },
+  {
+    "name": "Sopa de Tomate",
+    "ingredients": [
+      {
+        "product_description": "4 tomates maduros"
+      },
+      {
+        "product_description": "1 cebolla"
+      },
+      {
+        "product_description": "2 dientes de ajo"
+      },
+      {
+        "product_description": "1 taza de caldo de verduras"
+      },
+      {
+        "product_description": "Aceite de oliva"
+      },
+      {
+        "product_description": "Sal y pimienta al gusto"
+      }
+    ],
+    "times": [
+      {
+        "desayuno": false
+      },
+      {
+        "almuerzo": true
+      },
+      {
+        "café": false
+      },
+      {
+        "cena": false
+      }
+    ]
+  },
+  {
+    "name": "Tostadas de Aguacate",
+    "ingredients": [
+      {
+        "product_description": "2 aguacates maduros"
+      },
+      {
+        "product_description": "4 rebanadas de pan integral"
+      },
+      {
+        "product_description": "1 tomate"
+      },
+      {
+        "product_description": "1 limón"
+      },
+      {
+        "product_description": "Sal y pimienta al gusto"
+      }
+    ],
+    "times": [
+      {
+        "desayuno": false
+      },
+      {
+        "almuerzo": false
+      },
+      {
+        "café": true
+      },
+      {
+        "cena": false
+      }
+    ]
+  },
+  {
+    "name": "Pasta Alfredo",
+    "ingredients": [
+      {
+        "product_description": "8 oz de pasta (fettuccine, linguini, o tu elección)"
+      },
+      {
+        "product_description": "1 taza de crema espesa"
+      },
+      {
+        "product_description": "1/2 taza de mantequilla"
+      },
+      {
+        "product_description": "1 taza de queso parmesano rallado"
+      },
+      {
+        "product_description": "Ajo en polvo y nuez moscada al gusto"
+      },
+      {
+        "product_description": "Sal y pimienta al gusto"
+      }
+    ],
+    "times": [
+      {
+        "desayuno": false
+      },
+      {
+        "almuerzo": false
+      },
+      {
+        "café": false
+      },
+      {
+        "cena": true
+      }
+    ]
+  },
+  {
+    "name": "Batido de Frutas",
+    "ingredients": [
+      {
+        "product_description": "1 plátano maduro"
+      },
+      {
+        "product_description": "1/2 taza de fresas frescas"
+      },
+      {
+        "product_description": "1/2 taza de yogur natural"
+      },
+      {
+        "product_description": "1/2 taza de leche"
+      },
+      {
+        "product_description": "Miel al gusto"
+      },
+      {
+        "product_description": "Cubitos de hielo (opcional)"
+      }
+    ],
+    "times": [
+      {
+        "desayuno": true
+      },
+      {
+        "almuerzo": false
+      },
+      {
+        "café": false
+      },
+      {
+        "cena": false
+      }
+    ]
+  }
+]

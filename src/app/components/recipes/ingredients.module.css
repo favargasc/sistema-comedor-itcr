@@ -1,0 +1,17 @@
+.wrapper {
+  grid-row: 2;
+}
+
+.board {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-auto-flow: column;
+  gap: 1rem;
+  border: 1px solid black;
+  height: 16rem;
+  padding: 1rem 5rem 1rem 1rem;
+  margin: 2rem 1rem;
+  border-radius: 5px;
+}
