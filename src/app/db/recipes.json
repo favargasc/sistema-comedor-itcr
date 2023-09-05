@@ -1,6 +1,5 @@
 [
-  {
-    "name": "Ensalada César",
+   { "name": "Ensalada César",
     "ingredients": [
       {
         "product_description": "1 lechuga romana fresca"
@@ -16,18 +15,10 @@
       }
     ],
     "times": [
-      {
-        "desayuno": true
-      },
-      {
-        "almuerzo": false
-      },
-      {
-        "café": false
-      },
-      {
-        "cena": false
-      }
+      { "name": "desayuno", "state": false },
+      { "name": "almuerzo", "state": true },
+      { "name": "café", "state": true },
+      { "name": "cena", "state": false }
     ]
   },
   {
@@ -53,18 +44,10 @@
       }
     ],
     "times": [
-      {
-        "desayuno": false
-      },
-      {
-        "almuerzo": true
-      },
-      {
-        "café": false
-      },
-      {
-        "cena": false
-      }
+      { "name": "desayuno", "state": false },
+      { "name": "almuerzo", "state": true },
+      { "name": "café", "state": false },
+      { "name": "cena", "state": false }
     ]
   },
   {
@@ -87,18 +70,10 @@
       }
     ],
     "times": [
-      {
-        "desayuno": false
-      },
-      {
-        "almuerzo": false
-      },
-      {
-        "café": true
-      },
-      {
-        "cena": false
-      }
+      { "name": "desayuno", "state": false },
+      { "name": "almuerzo", "state": false },
+      { "name": "café", "state": true },
+      { "name": "cena", "state": false }
     ]
   },
   {
@@ -124,18 +99,10 @@
       }
     ],
     "times": [
-      {
-        "desayuno": false
-      },
-      {
-        "almuerzo": false
-      },
-      {
-        "café": false
-      },
-      {
-        "cena": true
-      }
+      { "name": "desayuno", "state": false },
+      { "name": "almuerzo", "state": false },
+      { "name": "café", "state": false },
+      { "name": "cena", "state": true }
     ]
   },
   {
@@ -161,18 +128,10 @@
       }
     ],
     "times": [
-      {
-        "desayuno": true
-      },
-      {
-        "almuerzo": false
-      },
-      {
-        "café": false
-      },
-      {
-        "cena": false
-      }
+      { "name": "desayuno", "state": true },
+      { "name": "almuerzo", "state": false },
+      { "name": "café", "state": false },
+      { "name": "cena", "state": false }
     ]
   }
 ]

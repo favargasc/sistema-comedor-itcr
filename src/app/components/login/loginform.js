@@ -38,11 +38,11 @@ export default function LoginForm(props) {
   return (
     <div className={styles.item}>
       <form onSubmit={handleSubmit}>
-        <span className={styles['main-msj']}>Welcome back</span>
-        <span className={styles['second-msj']}>Please enter your details</span>
-        <LoginField state={isValidLogin} field='Username' placeholder='Enter your email' type='text' value={formData.username} method={handleInputChange}/>
-        <LoginField state={isValidLogin} field='Password' type="password" value={formData.password} method={handleInputChange}/>
-        <button className={styles['login-btn']} type='submit' >Sign in</button>
+        <span className={styles['main-msj']}>Bienvenido de vuelta</span>
+        <span className={styles['second-msj']}>Por favor ingresa tus datos</span>
+        <LoginField state={isValidLogin} field='Usuario' placeholder='Ingrese su usuario' type='text' value={formData.username} method={handleInputChange}/>
+        <LoginField state={isValidLogin} field='Contraseña' type="password" value={formData.password} method={handleInputChange}/>
+        <button className={styles['login-btn']} type='submit' >Iniciar sesión</button>
       </form>
     </div>
   )

@@ -21,7 +21,7 @@ export default function Recipes() {
     <main className={styles.wrapper}>
       <span className={styles.title}>Ingredientes / {currentRecipe.name}</span>
       <Meals recipes={recipes} setRecipe={setCurrentRecipe}/>
-      <Options/>
+      <Options times={currentRecipe.times || []}/>
       <Ingredients ingredients={currentRecipe.ingredients || []}/>
     </main>
   )

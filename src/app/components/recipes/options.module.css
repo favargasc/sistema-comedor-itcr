@@ -14,12 +14,24 @@
   height: 2.3rem;
   width: 6rem;
   background-color: white;
-  color: darkgray;
-  font-weight: bold;
+  color: #181818;
+  font-weight: 580;
   margin: 0 2rem;
-  border: 2px solid darkgray;
+  border: 2px solid #181818;
   border-radius: 5px;
 }
+
+.btn-t {
+  height: 2.3rem;
+  width: 6rem;
+  background-color: #94bcd6;
+  color: #181818;
+  font-weight: 580;
+  margin: 0 2rem;
+  border: 2px solid #181818;
+  border-radius: 5px;
+}
+
 
 .wrapper {
   display: flex;

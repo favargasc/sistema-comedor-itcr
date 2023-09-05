@@ -18,7 +18,7 @@ export default function LoginField(props) {
           value={props.value}
           onChange={props.method}
         />
-        <span className={styles['error-msg-valid']}>Invalid username or password. Please try again</span>
+        <span className={styles['error-msg-valid']}>Usuario o contraseña invalido. Inténtalo de nuevo</span>
       </>
     ); 
   } else {
@@ -34,7 +34,7 @@ export default function LoginField(props) {
           name={props.field}
           onChange={props.method}
         />
-        <span className={styles['error-msg-invalid']}>Invalid username or password. Please try again</span>
+        <span className={styles['error-msg-invalid']}>Usuario o contraseña invalido. Inténtalo de nuevo</span>
       </>
     );
   }
