@@ -12,7 +12,7 @@ export default function Ingredients(props) {
         {
             props.ingredients.map((ingredient, index) => {
               return (
-                <IngredientItem key={index} ingredients={ingredient}/>
+                <IngredientItem currentRecipe={props.currentRecipe} key={index} ingredients={ingredient}/>
               );
             })
         }

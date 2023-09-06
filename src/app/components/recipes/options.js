@@ -8,9 +8,39 @@ import Modal from 'react-modal'
 export default function Options(props) {
   const handleInputData = (e)  => props.setSearch(e.target.value)
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    path: ''
+  })
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
 
   const openModal = () => setIsOpen(true);
   const  closeModal = () => setIsOpen(false);
+
+  const handleSubmit = async(event) => {
+    event.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:3000/api/recipe', {
+        method: "POST",
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      console.log("Success:", result);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+    window.location.reload(false);
+  };
 
   const customStyles = {
     content: {
@@ -57,13 +87,13 @@ export default function Options(props) {
         contentLabel="Example Modal"
       >
         {/*<button onClick={closeModal}>close</button>*/}
-        <form>
+        <form onSubmit={handleSubmit}>
         <label className={styles['label']} for="name">Nombre del platillo</label>
-        <input className={styles['login-field']} type="text" id="name" name="Name" />
+        <input className={styles['login-field']} type="text" id="name" name="name" onChange={handleInputChange}/>
 
         <label className={styles['label']} for="path">Dirección de la imagen</label>
-        <input className={styles['login-field']} type="text" id="path" name="path" />
-          <button className={styles['login-btn']}>Aceptar</button>
+        <input className={styles['login-field']} type="text" id="path" name="path" onChange={handleInputChange} />
+          <button className={styles['login-btn']} type='submit'>Aceptar</button>
         </form>
       </Modal>
     </div>

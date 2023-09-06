@@ -1,80 +1,78 @@
 [
   {
-    "id": 1,
-    "name": "Ensalada César",
-    "path": "/ensalada_cesar_.jpg",
+    "id": 0,
     "ingredients": [
       {
-        "id": 1,
-        "product_description": "1 lechuga romana fresca",
+        "id": 0,
+        "product_description": "1 americana",
         "isSelected": true
       },
       {
-        "id": 2,
-        "product_description": "1 taza de croutones",
+        "id": 1,
+        "product_description": "1 taza de pan fresco",
         "isSelected": false
       },
       {
-        "id": 3,
+        "id": 2,
         "product_description": "1/2 taza de queso parmesano rallado",
         "isSelected": false
       },
       {
-        "id": 4,
+        "id": 3,
         "product_description": "Pechuga de pollo a la parrilla",
         "isSelected": false
       }
     ],
+    "name": "Ensalada César",
+    "path": "/ensalada_cesar_.jpg",
     "times": [
       {
-        "id": 1,
+        "id": 0,
         "name": "desayuno",
         "state": false
       },
       {
-        "id": 2,
+        "id": 1,
         "name": "almuerzo",
         "state": true
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "café",
         "state": true
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "cena",
         "state": false
       }
     ]
   },
   {
-    "id": 2,
-    "name": "Sopa de Tomate",
-    "path": "/sopa_de_tomate.jpg",
+    "id": 1,
     "ingredients": [
       {
-        "id": 5,
+        "id": 0,
         "product_description": "4 tomates maduros",
         "isSelected": false
       },
       {
-        "id": 6,
+        "id": 1,
         "product_description": "1 cebolla",
         "isSelected": false
       },
       {
-        "id": 7,
+        "id": 2,
         "product_description": "2 dientes de ajo",
         "isSelected": false
       },
       {
-        "id": 8,
+        "id": 3,
         "product_description": "1 taza de caldo de verduras",
         "isSelected": false
       },
       {
-        "id": 9,
+        "id": 4,
         "product_description": "Aceite de oliva",
         "isSelected": false
       },
@@ -84,24 +82,80 @@
         "isSelected": false
       }
     ],
+    "name": "Sopa de Tomate",
+    "path": "/sopa_de_tomate.jpg",
     "times": [
       {
-        "id": 1,
+        "id": 0,
         "name": "desayuno",
         "state": false
       },
       {
-        "id": 2,
+        "id": 1,
         "name": "almuerzo",
         "state": true
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "café",
         "state": false
       },
       {
+        "id": 3,
+        "name": "cena",
+        "state": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "ingredients": [
+      {
+        "id": 0,
+        "product_description": "2 aguacates maduros",
+        "isSelected": false
+      },
+      {
+        "id": 1,
+        "product_description": "4 rebanadas de pan integral",
+        "isSelected": false
+      },
+      {
+        "id": 2,
+        "product_description": "1 tomate",
+        "isSelected": false
+      },
+      {
+        "id": 3,
+        "product_description": "1 limón",
+        "isSelected": false
+      },
+      {
         "id": 4,
+        "product_description": "Sal y pimienta al gusto",
+        "isSelected": false
+      }
+    ],
+    "name": "Tostadas de Aguacate",
+    "path": "/tostada_de_aguacate.jpg",
+    "times": [
+      {
+        "id": 0,
+        "name": "desayuno",
+        "state": false
+      },
+      {
+        "id": 1,
+        "name": "almuerzo",
+        "state": false
+      },
+      {
+        "id": 2,
+        "name": "café",
+        "state": true
+      },
+      {
+        "id": 3,
         "name": "cena",
         "state": false
       }
@@ -109,289 +163,117 @@
   },
   {
     "id": 3,
-    "name": "Tostadas de Aguacate",
-    "path": "/tostada_de_aguacate.jpg",
     "ingredients": [
       {
-        "id": 11,
-        "product_description": "2 aguacates maduros",
+        "id": 0,
+        "product_description": "8 oz de pasta",
         "isSelected": false
       },
       {
-        "id": 12,
-        "product_description": "4 rebanadas de pan integral",
+        "id": 1,
+        "product_description": "1 taza de crema espesa",
         "isSelected": false
       },
       {
-        "id": 13,
-        "product_description": "1 tomate",
+        "id": 2,
+        "product_description": "1/2 taza de mantequilla",
         "isSelected": false
       },
       {
-        "id": 14,
-        "product_description": "1 limón",
+        "id": 3,
+        "product_description": "1 taza de queso parmesano rallado",
         "isSelected": false
       },
       {
-        "id": 15,
+        "id": 4,
+        "product_description": "Ajo en polvo y nuez moscada al gusto",
+        "isSelected": false
+      },
+      {
+        "id": 5,
         "product_description": "Sal y pimienta al gusto",
         "isSelected": false
       }
     ],
+    "name": "Pasta Alfredo",
+    "path": "/pasta_alfredo.jpg",
     "times": [
       {
-        "id": 1,
+        "id": 0,
         "name": "desayuno",
         "state": false
       },
       {
-        "id": 2,
+        "id": 1,
         "name": "almuerzo",
         "state": false
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "café",
-        "state": true
+        "state": false
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "cena",
-        "state": false
+        "state": true
       }
     ]
   },
   {
     "id": 4,
-    "name": "Pasta Alfredo",
-    "path": "/pasta_alfredo.jpg",
     "ingredients": [
       {
-        "id": 16,
-        "product_description": "8 oz de pasta",
-        "isSelected": false
-      },
-      {
-        "id": 17,
-        "product_description": "1 taza de crema espesa",
-        "isSelected": false
-      },
-      {
-        "id": 18,
-        "product_description": "1/2 taza de mantequilla",
-        "isSelected": false
-      },
-      {
-        "id": 19,
-        "product_description": "1 taza de queso parmesano rallado",
-        "isSelected": false
-      },
-      {
-        "id": 20,
-        "product_description": "Ajo en polvo y nuez moscada al gusto",
-        "isSelected": false
-      },
-      {
-        "id": 21,
-        "product_description": "Sal y pimienta al gusto",
-        "isSelected": false
-      }
-    ],
-    "times": [
-      {
-        "id": 1,
-        "name": "desayuno",
-        "state": false
-      },
-      {
-        "id": 2,
-        "name": "almuerzo",
-        "state": false
-      },
-      {
-        "id": 3,
-        "name": "café",
-        "state": false
-      },
-      {
-        "id": 4,
-        "name": "cena",
-        "state": true
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Batido de Frutas",
-    "path":"/batido_de_frutas.jpg",
-    "ingredients": [
-      {
-        "id": 22,
+        "id": 0,
         "product_description": "1 plátano maduro",
         "isSelected": false
       },
       {
-        "id": 23,
+        "id": 1,
         "product_description": "1/2 taza de fresas frescas",
         "isSelected": false
       },
       {
-        "id": 24,
+        "id": 2,
         "product_description": "1/2 taza de yogur natural",
         "isSelected": false
       },
       {
-        "id": 25,
+        "id": 3,
         "product_description": "1/2 taza de leche",
         "isSelected": false
       },
       {
-        "id": 26,
+        "id": 4,
         "product_description": "Miel al gusto",
         "isSelected": false
       },
       {
-        "id": 27,
+        "id": 5,
         "product_description": "Cubitos de hielo",
         "isSelected": false
       }
     ],
-    "times": [
-      {
-        "id": 1,
-        "name": "desayuno",
-        "state": true
-      },
-      {
-        "id": 2,
-        "name": "almuerzo",
-        "state": false
-      },
-      {
-        "id": 3,
-        "name": "café",
-        "state": false
-      },
-      {
-        "id": 4,
-        "name": "cena",
-        "state": false
-      }
-    ]
-  },
-  {
-    "id": 5,
     "name": "Batido de Frutas",
-    "path":"/batido_de_frutas.jpg",
-    "ingredients": [
-      {
-        "id": 22,
-        "product_description": "1 plátano maduro",
-        "isSelected": false
-      },
-      {
-        "id": 23,
-        "product_description": "1/2 taza de fresas frescas",
-        "isSelected": false
-      },
-      {
-        "id": 24,
-        "product_description": "1/2 taza de yogur natural",
-        "isSelected": false
-      },
-      {
-        "id": 25,
-        "product_description": "1/2 taza de leche",
-        "isSelected": false
-      },
-      {
-        "id": 26,
-        "product_description": "Miel al gusto",
-        "isSelected": false
-      },
-      {
-        "id": 27,
-        "product_description": "Cubitos de hielo",
-        "isSelected": false
-      }
-    ],
+    "path": "/batido_de_frutas.jpg",
     "times": [
       {
-        "id": 1,
+        "id": 0,
         "name": "desayuno",
         "state": true
       },
       {
-        "id": 2,
-        "name": "almuerzo",
-        "state": false
-      },
-      {
-        "id": 3,
-        "name": "café",
-        "state": false
-      },
-      {
-        "id": 4,
-        "name": "cena",
-        "state": false
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Batido de Frutas",
-    "path":"/batido_de_frutas.jpg",
-    "ingredients": [
-      {
-        "id": 22,
-        "product_description": "1 plátano maduro",
-        "isSelected": false
-      },
-      {
-        "id": 23,
-        "product_description": "1/2 taza de fresas frescas",
-        "isSelected": false
-      },
-      {
-        "id": 24,
-        "product_description": "1/2 taza de yogur natural",
-        "isSelected": false
-      },
-      {
-        "id": 25,
-        "product_description": "1/2 taza de leche",
-        "isSelected": false
-      },
-      {
-        "id": 26,
-        "product_description": "Miel al gusto",
-        "isSelected": false
-      },
-      {
-        "id": 27,
-        "product_description": "Cubitos de hielo",
-        "isSelected": false
-      }
-    ],
-    "times": [
-      {
         "id": 1,
-        "name": "desayuno",
-        "state": true
-      },
-      {
-        "id": 2,
         "name": "almuerzo",
         "state": false
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "café",
         "state": false
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "cena",
         "state": false
       }

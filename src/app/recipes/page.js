@@ -23,7 +23,7 @@ export default function Recipes() {
       <span className={styles.title}>Ingredientes / {currentRecipe.name}</span>
       <Meals recipes={recipes} setRecipe={setCurrentRecipe} search={searchData}/>
       <Options times={currentRecipe.times || []} setSearch={setSearchData}/>
-      <Ingredients ingredients={currentRecipe.ingredients || []}/>
+      <Ingredients currentRecipe={currentRecipe} ingredients={currentRecipe.ingredients || []}/>
     </main>
   )
 }
