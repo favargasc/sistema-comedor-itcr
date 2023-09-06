@@ -43,7 +43,7 @@ export async function POST(request) {
     ]
   },)
 
-  fs.promises.writeFile('C:/Users/Fabian/Desktop/sistema-comedor-itcr/src/app/db/recipes.json', JSON.stringify(file))
+  fs.promises.writeFile('C:/Users/Fabian/Desktop/sistema-comedor-itcr/src/app/db/recipes.json', JSON.stringify(file, null, 2))
   .then(() => {
     console.log('Archivo actualizado con éxito');
   })
