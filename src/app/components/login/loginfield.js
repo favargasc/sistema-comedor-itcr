@@ -8,7 +8,7 @@ export default function LoginField(props) {
     return (
       <>
         <label className={styles.label} htmlFor={props.field}>
-          {props.field}
+          {props.name}
         </label>
         <input
           className={styles['login-field']}
@@ -25,7 +25,7 @@ export default function LoginField(props) {
     return (
       <>
         <label className={styles.label} htmlFor={props.field}>
-          {props.field}
+          {props.name}
         </label>
         <input
           className={styles['login-field-error']}
