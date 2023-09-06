@@ -5,12 +5,18 @@
   height: 11rem;
   border-radius: 5px;
   text-align: center;
+  margin: 0 1rem;
+}
+
+.wrapper:hover {
+  background-color: #94bcd6;
+  color: white;
 }
 
 .img {
   position: relative;
   width: 17rem;
-  height: 9rem;
+  height: 9.7rem;
   background-color: gray;
   border-radius: 5px;
 }

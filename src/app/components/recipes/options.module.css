@@ -4,10 +4,16 @@
   border-radius: 5px;
   border: 1.5px solid gray;
   margin: 0 1rem;
+  text-indent: 2rem;
 }
 
 .add-btn {
   height: 2.3rem;
+  width: 8rem;
+  background-color: #181818;
+  border-radius: 5px;
+  border: none;
+  color: white;
 }
 
 .btn {
@@ -32,7 +38,6 @@
   border-radius: 5px;
 }
 
-
 .wrapper {
   display: flex;
   flex-direction: row-reverse;
@@ -43,4 +48,45 @@
 
 .times {
   margin-right: 5rem;
+}
+
+.icon {
+  position: relative;
+  right: 18rem;
+  top: 0.4rem;
+  width: 20px;
+  height: 20px;
+}
+
+.add-form {
+  display: block;
+  margin: auto;
+}
+
+.login-field {
+  display: block;
+  width: 14rem;
+  height: 1.7rem;
+  border: 0.5px solid #bed2ea;
+  border-radius: 5px;
+  text-indent: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.label {
+  display: block;
+  position: relative;
+  font-size: small;
+  font-weight: 650;
+  color: #355f89;
+  margin-bottom: 0.2rem;
+}
+
+.login-btn {
+  width: 14rem;
+  height: 1.9rem;
+  background-color: #25456b;
+  color: white;
+  border-radius: 5px;
+  border: none;
 }

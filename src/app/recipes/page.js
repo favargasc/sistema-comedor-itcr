@@ -10,6 +10,7 @@ export default function Recipes() {
   const [recipes, setRecipes] = useState([])
   const [title, setCurrentTitle] = useState([])
   const [currentRecipe, setCurrentRecipe] = useState([])
+  const [searchData, setSearchData] = useState("")
 
   useEffect(() => {
     fetch('http://localhost:3000/api/recipe')
@@ -20,8 +21,8 @@ export default function Recipes() {
   return (
     <main className={styles.wrapper}>
       <span className={styles.title}>Ingredientes / {currentRecipe.name}</span>
-      <Meals recipes={recipes} setRecipe={setCurrentRecipe}/>
-      <Options times={currentRecipe.times || []}/>
+      <Meals recipes={recipes} setRecipe={setCurrentRecipe} search={searchData}/>
+      <Options times={currentRecipe.times || []} setSearch={setSearchData}/>
       <Ingredients ingredients={currentRecipe.ingredients || []}/>
     </main>
   )
