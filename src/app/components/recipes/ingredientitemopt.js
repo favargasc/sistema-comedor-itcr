@@ -23,7 +23,6 @@ export default function IngOpt() {
   return (
     <div className={styles['opt-module']}>
       <button className={styles['btn-add']}>Agregar</button>
-      <button className={styles['btn-modify']}>Modificar</button>
       <button className={styles['btn-delete']}>Eliminar</button>
     </div>
   )

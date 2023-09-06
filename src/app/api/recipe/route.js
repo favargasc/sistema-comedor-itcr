@@ -28,12 +28,12 @@ export async function POST(request) {
       {
         id: 2,
         name: "almuerzo",
-        state: true
+        state: false
       },
       {
         id: 3,
         name: "café",
-        state: true
+        state: false
       },
       {
         id: 4,
