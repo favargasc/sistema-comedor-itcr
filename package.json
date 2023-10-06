@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "5.4.1",
     "@tauri-apps/api": "^1.4.0",
     "install": "^0.13.0",
     "msnodesqlv8": "^4.1.0",
@@ -20,6 +21,7 @@
     "uninstall": "^0.0.0"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.4.0"
+    "@tauri-apps/cli": "^1.4.0",
+    "prisma": "^5.4.1"
   }
 }

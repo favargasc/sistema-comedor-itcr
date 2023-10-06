@@ -1,0 +1,72 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Role {
+  role_id     Int    @id @default(autoincrement())
+  description String
+}
+
+model User {
+  user_id   Int         @id @default(autoincrement())
+  full_name String
+  username  String      @unique
+  password  Bytes
+  ChangeLog ChangeLog[]
+  SaleLog   SaleLog[]
+}
+
+model WarningMessage {
+  msg_id    Int         @id @default(autoincrement())
+  message   String
+  ChangeLog ChangeLog[]
+}
+
+model ChangeLog {
+  change_log_id   Int            @id @default(autoincrement())
+  user_id         Int
+  warning_msg_id  Int
+  employee        User           @relation(fields: [user_id], references: [user_id])
+  warning_message WarningMessage @relation(fields: [warning_msg_id], references: [msg_id])
+}
+
+model Dish {
+  dish_id        Int           @id @default(autoincrement())
+  name           String
+  internal_price Float
+  foreign_price  Float
+  is_favorite    Boolean       @default(false)
+  img_path       String
+  SoldDishLog    SoldDishLog[]
+}
+
+model SaleLog {
+  sale_id     Int           @id @default(autoincrement())
+  user_id     Int
+  total       Int
+  seller      User          @relation(fields: [user_id], references: [user_id])
+  SoldDishLog SoldDishLog[]
+}
+
+model SoldDishLog {
+  sold_dish_log_id Int @id @default(autoincrement())
+  sale_id          Int
+  dish_id          Int
+  sold_dishes      Int @default(0)
+
+  sale_log SaleLog @relation(fields: [sale_id], references: [sale_id])
+  dish     Dish    @relation(fields: [dish_id], references: [dish_id])
+}
+
+model Day {
+  day_id Int    @id @default(autoincrement())
+  name   String
+}
