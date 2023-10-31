@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "name": "Todas"
+  },
+  {
+    "id": 1,
+    "name": "Desayuno"
+  },
+  {
+    "id": 2,
+    "name": "Almuerzo"
+  },
+  {
+    "id": 3,
+    "name": "Café"
+  },
+  {
+    "id": 4,
+    "name": "Cena"
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "id": 1,
+    "name": "Huevo",
+    "category": 8,
+    "img": "no_image",
+    "intern": 500,
+    "extern": 700
+  },
+  {
+    "id": 24,
+    "name": "Berenjena",
+    "category": 1,
+    "img": "no_image",
+    "intern": 650,
+    "extern": 1000
+  },
+  {
+    "id": 17,
+    "name": "Brócoli",
+    "category": 12,
+    "img": "no_image",
+    "intern": 850,
+    "extern": 1300
+  },
+  {
+    "id": 19,
+    "name": "Batata",
+    "category": 14,
+    "img": "no_image",
+    "intern": 1000,
+    "extern": 1600
+  },
+  {
+    "id": 21,
+    "name": "Calabacín",
+    "category": 9,
+    "img": "no_image",
+    "intern": 500,
+    "extern": 800
+  },
+  {
+    "id": 9,
+    "name": "Cebolla",
+    "category": 11,
+    "img": "no_image",
+    "intern": 450,
+    "extern": 800
+  },
+  {
+    "id": 18,
+    "name": "Coliflor",
+    "category": 3,
+    "img": "no_image",
+    "intern": 700,
+    "extern": 1100
+  },
+  {
+    "id": 25,
+    "name": "Alcachofa",
+    "category": 16,
+    "img": "no_image",
+    "intern": 1200,
+    "extern": 1900
+  },
+  {
+    "id": 5,
+    "name": "Zanahoria",
+    "category": 9,
+    "img": "no_image",
+    "intern": 600,
+    "extern": 900
+  },
+  {
+    "id": 26,
+    "name": "Champiñones",
+    "category": 8,
+    "img": "no_image",
+    "intern": 750,
+    "extern": 1200
+  },
+  {
+    "id": 3,
+    "name": "Frijoles",
+    "category": 12,
+    "img": "no_image",
+    "intern": 1200,
+    "extern": 1800
+  },
+  {
+    "id": 4,
+    "name": "Pollo",
+    "category": 3,
+    "img": "no_image",
+    "intern": 800,
+    "extern": 1200
+  },
+  {
+    "id": 16,
+    "name": "Repollo",
+    "category": 10,
+    "img": "no_image",
+    "intern": 400,
+    "extern": 700
+  },
+  {
+    "id": 20,
+    "name": "Pimiento",
+    "category": 7,
+    "img": "no_image",
+    "intern": 550,
+    "extern": 900
+  },
+  {
+    "id": 21,
+    "name": "Calabacín",
+    "category": 9,
+    "img": "no_image",
+    "intern": 500,
+    "extern": 800
+  },
+  {
+    "id": 7,
+    "name": "Lechuga",
+    "category": 10,
+    "img": "no_image",
+    "intern": 300,
+    "extern": 500
+  },
+  {
+    "id": 8,
+    "name": "Tomate",
+    "category": 6,
+    "img": "no_image",
+    "intern": 700,
+    "extern": 1100
+  },
+  {
+    "id": 11,
+    "name": "Maíz",
+    "category": 4,
+    "img": "no_image",
+    "intern": 550,
+    "extern": 900
+  },
+  {
+    "id": 12,
+    "name": "Espinaca",
+    "category": 13,
+    "img": "no_image",
+    "intern": 900,
+    "extern": 1400
+  },
+  {
+    "id": 13,
+    "name": "Pepino",
+    "category": 2,
+    "img": "no_image",
+    "intern": 350,
+    "extern": 600
+  },
+  {
+    "id": 14,
+    "name": "Zanahoria",
+    "category": 8,
+    "img": "no_image",
+    "intern": 600,
+    "extern": 900
+  },
+  {
+    "id": 15,
+    "name": "Judías verdes",
+    "category": 5,
+    "img": "no_image",
+    "intern": 750,
+    "extern": 1200
+  },
+  {
+    "id": 10,
+    "name": "Garbanzos",
+    "category": 15,
+    "img": "no_image",
+    "intern": 1300,
+    "extern": 2000
+  },
+  {
+    "id": 22,
+    "name": "Remolacha",
+    "category": 11,
+    "img": "no_image",
+    "intern": 600,
+    "extern": 1000
+  },
+  {
+    "id": 23,
+    "name": "Apio",
+    "category": 6,
+    "img": "no_image",
+    "intern": 450,
+    "extern": 700
+  },
+  {
+    "id": 27,
+    "name": "Espárragos",
+    "category": 5,
+    "img": "no_image",
+    "intern": 900,
+    "extern": 1400
+  },
+  {
+    "id": 28,
+    "name": "Pepino",
+    "category": 10,
+    "img": "no_image",
+    "intern": 400,
+    "extern": 700
+  },
+  {
+    "id": 29,
+    "name": "Perejil",
+    "category": 12,
+    "img": "no_image",
+    "intern": 300,
+    "extern": 500
+  },
+  {
+    "id": 30,
+    "name": "Romero",
+    "category": 3,
+    "img": "no_image",
+    "intern": 500,
+    "extern": 800
+  }
+]
