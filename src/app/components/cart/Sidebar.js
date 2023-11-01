@@ -50,7 +50,7 @@ const CartDetail = ({ name, intern, extern }) => (
     <span>{name}</span>
     <span className={styles.price}>{`Interno: ₡${intern}`}</span>
     <span className={styles.price}>{`Externo: ₡${extern}`}</span>
-    <Counter />
+    {/*<Counter />*/}
   </div>
 );
 

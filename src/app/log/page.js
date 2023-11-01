@@ -42,7 +42,7 @@ export default function Log() {
   return (
     <div className={styles.wrapper}>
       <span className={styles.title}>Registro de compras</span>
-      <Filter />
+      {/*<Filter />*/}
       <table className={styles["log-table"]}>
         <thead>
           <tr>

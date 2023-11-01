@@ -12,6 +12,7 @@ export default function TopBar() {
         <div onClick={() => router.push("/events")}>Eventos</div>
         <div onClick={() => router.push("/log")}>Historial</div>
         <div onClick={() => router.push("/users")}>Usuarios</div>
+        <div onClick={() => router.push("/cart")}>Carrito</div>
         <div onClick={() => router.push("/login")}>Salir</div>
       </div>
     </>
