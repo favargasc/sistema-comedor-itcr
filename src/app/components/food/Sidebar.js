@@ -34,7 +34,7 @@ export default function Sidebar({ openModal }) {
       <button className={styles["add-btn"]} onClick={openModal}>
         Agregar un platillo
       </button>
-      <ListCategories />
+      {/*<ListCategories />*/}
     </aside>
   );
 }

@@ -40,9 +40,9 @@ export default function Navbar({ foodNumber = 0 }) {
     <nav className={styles["nav-bar"]}>
       <span className={styles.title}>Platillos Guardados</span>
       <span className={styles.subtitle}>{foodNumber} platillos</span>
-      <SearchBar />
+      {/*<SearchBar />
       <IconButton iconName={"filter"} title={"Filtrar"} />
-      <IconButton iconName={"sort"} title={"Ordenar"} />
+  <IconButton iconName={"sort"} title={"Ordenar"} />*/}
     </nav>
   );
 }

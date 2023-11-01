@@ -2,233 +2,100 @@
   {
     "id": 1,
     "name": "Huevo",
-    "category": 8,
-    "img": "no_image",
+    "img": "undefined",
     "intern": 500,
-    "extern": 700
+    "extern": 700,
+    "id_category": 6,
+    "name_category": "Proteicos"
   },
   {
-    "id": 24,
+    "id": 2,
     "name": "Berenjena",
-    "category": 1,
-    "img": "no_image",
+    "img": "undefined",
     "intern": 650,
-    "extern": 1000
-  },
-  {
-    "id": 17,
-    "name": "Brócoli",
-    "category": 12,
-    "img": "no_image",
-    "intern": 850,
-    "extern": 1300
-  },
-  {
-    "id": 19,
-    "name": "Batata",
-    "category": 14,
-    "img": "no_image",
-    "intern": 1000,
-    "extern": 1600
-  },
-  {
-    "id": 21,
-    "name": "Calabacín",
-    "category": 9,
-    "img": "no_image",
-    "intern": 500,
-    "extern": 800
-  },
-  {
-    "id": 9,
-    "name": "Cebolla",
-    "category": 11,
-    "img": "no_image",
-    "intern": 450,
-    "extern": 800
-  },
-  {
-    "id": 18,
-    "name": "Coliflor",
-    "category": 3,
-    "img": "no_image",
-    "intern": 700,
-    "extern": 1100
-  },
-  {
-    "id": 25,
-    "name": "Alcachofa",
-    "category": 16,
-    "img": "no_image",
-    "intern": 1200,
-    "extern": 1900
-  },
-  {
-    "id": 5,
-    "name": "Zanahoria",
-    "category": 9,
-    "img": "no_image",
-    "intern": 600,
-    "extern": 900
-  },
-  {
-    "id": 26,
-    "name": "Champiñones",
-    "category": 8,
-    "img": "no_image",
-    "intern": 750,
-    "extern": 1200
+    "extern": 1000,
+    "id_category": 12,
+    "name_category": "Principales vegetarianos"
   },
   {
     "id": 3,
-    "name": "Frijoles",
-    "category": 12,
-    "img": "no_image",
-    "intern": 1200,
-    "extern": 1800
+    "name": "Brócoli",
+    "img": "undefined",
+    "intern": 850,
+    "extern": 1300,
+    "id_category": 12,
+    "name_category": "Principales vegetarianos"
   },
   {
     "id": 4,
-    "name": "Pollo",
-    "category": 3,
-    "img": "no_image",
-    "intern": 800,
-    "extern": 1200
+    "name": "Batata",
+    "img": "undefined",
+    "intern": 1000,
+    "extern": 1600,
+    "id_category": 14,
+    "name_category": "Guarniciones"
   },
   {
-    "id": 16,
-    "name": "Repollo",
-    "category": 10,
-    "img": "no_image",
-    "intern": 400,
-    "extern": 700
-  },
-  {
-    "id": 20,
-    "name": "Pimiento",
-    "category": 7,
-    "img": "no_image",
-    "intern": 550,
-    "extern": 900
-  },
-  {
-    "id": 21,
+    "id": 5,
     "name": "Calabacín",
-    "category": 9,
-    "img": "no_image",
+    "img": "undefined",
     "intern": 500,
-    "extern": 800
+    "extern": 800,
+    "id_category": 9,
+    "name_category": "Acompañamientos desayuno"
+  },
+  {
+    "id": 6,
+    "name": "Cebolla",
+    "img": "undefined",
+    "intern": 450,
+    "extern": 800,
+    "id_category": 11,
+    "name_category": "Principales de carne"
   },
   {
     "id": 7,
-    "name": "Lechuga",
-    "category": 10,
-    "img": "no_image",
-    "intern": 300,
-    "extern": 500
+    "name": "Coliflor",
+    "img": "undefined",
+    "intern": 700,
+    "extern": 1100,
+    "id_category": 3,
+    "name_category": "Gallo pinto"
   },
   {
     "id": 8,
-    "name": "Tomate",
-    "category": 6,
-    "img": "no_image",
-    "intern": 700,
-    "extern": 1100
+    "name": "Alcachofa",
+    "img": "undefined",
+    "intern": 1200,
+    "extern": 1900,
+    "id_category": 16,
+    "name_category": "Ensaladas"
   },
   {
-    "id": 11,
-    "name": "Maíz",
-    "category": 4,
-    "img": "no_image",
-    "intern": 550,
-    "extern": 900
-  },
-  {
-    "id": 12,
-    "name": "Espinaca",
-    "category": 13,
-    "img": "no_image",
-    "intern": 900,
-    "extern": 1400
-  },
-  {
-    "id": 13,
-    "name": "Pepino",
-    "category": 2,
-    "img": "no_image",
-    "intern": 350,
-    "extern": 600
-  },
-  {
-    "id": 14,
+    "id": 9,
     "name": "Zanahoria",
-    "category": 8,
-    "img": "no_image",
+    "img": "undefined",
     "intern": 600,
-    "extern": 900
-  },
-  {
-    "id": 15,
-    "name": "Judías verdes",
-    "category": 5,
-    "img": "no_image",
-    "intern": 750,
-    "extern": 1200
+    "extern": 900,
+    "id_category": 9,
+    "name_category": "Acompañamientos desayuno"
   },
   {
     "id": 10,
-    "name": "Garbanzos",
-    "category": 15,
-    "img": "no_image",
-    "intern": 1300,
-    "extern": 2000
+    "name": "Champiñones",
+    "img": "undefined",
+    "intern": 750,
+    "extern": 1200,
+    "id_category": 6,
+    "name_category": "Proteicos"
   },
   {
-    "id": 22,
-    "name": "Remolacha",
-    "category": 11,
-    "img": "no_image",
-    "intern": 600,
-    "extern": 1000
-  },
-  {
-    "id": 23,
-    "name": "Apio",
-    "category": 6,
-    "img": "no_image",
-    "intern": 450,
-    "extern": 700
-  },
-  {
-    "id": 27,
-    "name": "Espárragos",
-    "category": 5,
-    "img": "no_image",
-    "intern": 900,
-    "extern": 1400
-  },
-  {
-    "id": 28,
-    "name": "Pepino",
-    "category": 10,
-    "img": "no_image",
-    "intern": 400,
-    "extern": 700
-  },
-  {
-    "id": 29,
-    "name": "Perejil",
-    "category": 12,
-    "img": "no_image",
-    "intern": 300,
-    "extern": 500
-  },
-  {
-    "id": 30,
-    "name": "Romero",
-    "category": 3,
-    "img": "no_image",
-    "intern": 500,
-    "extern": 800
+    "id": 11,
+    "name": "Aguacate",
+    "img": "undefined",
+    "intern": "1500",
+    "extern": "2500",
+    "id_category": "3",
+    "name_category": "Frutas"
   }
 ]

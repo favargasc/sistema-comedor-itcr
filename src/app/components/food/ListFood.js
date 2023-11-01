@@ -1,6 +1,9 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
+import axios from "axios";
 import styles from "@/styles/food/foodlist.module.css";
+import { useEffect, useState } from "react";
 
 const TextContent = ({ name, category }) => {
   return (
@@ -23,35 +26,61 @@ const ImgButton = ({ imgName, handleBtn }) => (
   </button>
 );
 
-const ButtonRow = ({ openModal }) => (
+const ButtonRow = ({ openModal, deleteFood }) => (
   <div className={styles["btn-row"]}>
-    <ImgButton imgName={"like"} />
-    <ImgButton imgName={"edit"} handleBtn={openModal}></ImgButton>
-    <ImgButton imgName={"trash"} />
+    {/*<ImgButton imgName={"like"} />*/}
+    {/*<ImgButton imgName={"edit"} handleBtn={openModal}></ImgButton>*/}
+    <ImgButton imgName={"trash"} handleBtn={deleteFood} />
   </div>
 );
 
-const FoodItem = ({ openModal }) => (
+const FoodItem = ({ openModal, name, img, name_category, deleteFood }) => (
   <div className={styles.container}>
     <Image
       className={styles.img}
-      src="/img/food/pinto.jpg"
+      src={`/img/food/${img}.png`}
       width={200}
       height={130}
-      alt="Picture of the author"
+      alt=""
     />
     <div className={styles.details}>
-      <TextContent name={"Salad Caprese Pasta Spaghetti"} category={"Food"} />
-      <ButtonRow openModal={openModal} />
+      <TextContent name={name} category={name_category} />
+      <ButtonRow openModal={openModal} deleteFood={deleteFood} />
     </div>
   </div>
 );
 
-export default function ListFood({ openModal }) {
+export default function ListFood({ openModal, setFoodCounter }) {
+  const [foodList, setFoodList] = useState([]);
+
+  useEffect(() => {
+    fetch("/api/temp/food")
+      .then((res) => res.json())
+      .then((data) => setFoodList(data));
+
+    setFoodCounter(foodList.length);
+  }, [foodList]);
+
+  const deleteFoo = (id) => {
+    const food = {
+      id: id,
+    };
+
+    axios.post(
+      "http://localhost:3000/api/temp/foodDelete",
+      JSON.stringify(food)
+    );
+  };
+
   return (
     <div className={styles["food-content"]}>
-      {Array.from({ length: 20 }, (_, i) => (
-        <FoodItem key={i} openModal={openModal} />
+      {foodList.map((food) => (
+        <FoodItem
+          key={food.id}
+          openModal={openModal}
+          deleteFood={() => deleteFoo(food.id)}
+          {...food}
+        />
       ))}
     </div>
   );

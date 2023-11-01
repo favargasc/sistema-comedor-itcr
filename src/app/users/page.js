@@ -3,6 +3,7 @@
 import styles from "../../styles/users.module.css";
 import Modal from "react-modal";
 import { useState } from "react";
+import data from "../data/users.json";
 
 const customStyles = {
   content: {

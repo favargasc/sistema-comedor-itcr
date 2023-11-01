@@ -25,7 +25,7 @@ export default function Navbar() {
     <>
       <div className={styles["top-bar"]}>
         <span className={styles.title}>Eventos del día</span>
-        <input
+        {/*<input
           className={styles["search-bar"]}
           placeholder="Encuentra platillos y bebidas"
         />
@@ -35,9 +35,9 @@ export default function Navbar() {
           width={25}
           height={25}
           alt=""
-        />
+  />*/}
       </div>
-      <FilterList categories={categories} />
+      {/*<FilterList categories={categories} />*/}
     </>
   );
 }

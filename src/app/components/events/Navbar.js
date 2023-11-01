@@ -5,17 +5,21 @@ import styles from "@/styles/events/navbar.module.css";
 import data from "../../data/events.json";
 import { useEffect, useState } from "react";
 
-const FilterList = ({ events }) => (
+const FilterList = ({ events, setCurrentEvent }) => (
   <div className={styles["category-filter"]}>
-    {events.map(({ id, name }) => (
-      <div className={styles.category} key={id}>
-        {name}
+    {events.map(({ id, event }) => (
+      <div
+        className={styles.category}
+        key={id}
+        onClick={() => setCurrentEvent(id)}
+      >
+        {event}
       </div>
     ))}
   </div>
 );
 
-export default function Navbar() {
+export default function Navbar({ setCurrentEvent }) {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
@@ -25,7 +29,7 @@ export default function Navbar() {
     <>
       <div className={styles["top-bar"]}>
         <span className={styles.title}>Platillos disponibles</span>
-        <input
+        {/*<input
           className={styles["search-bar"]}
           placeholder="Encuentra platillos y bebidas"
         />
@@ -35,9 +39,9 @@ export default function Navbar() {
           width={25}
           height={25}
           alt=""
-        />
+        />*/}
       </div>
-      <FilterList events={events} />
+      <FilterList events={events} setCurrentEvent={setCurrentEvent} />
     </>
   );
 }

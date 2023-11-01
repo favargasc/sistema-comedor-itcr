@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import data from "../../data/food.json";
 import datac from "../../data/categories.json";
 import styles from "@/styles/events/sidebar.module.css";
+import axios from "axios";
 
 const Section = ({ title, children }) => (
   <div className={styles.section}>
@@ -21,66 +22,52 @@ const CartDetail = ({ name, intern, extern }) => (
   </div>
 );
 
-const CartItem = ({ name, img, intern, extern }) => (
-  <div className={styles["cart-item"]}>
+const addEventTime = async (id, food) => {
+  await axios.post(
+    "http://localhost:3000/api/temp/events",
+    JSON.stringify({
+      id: id,
+      food: food,
+    })
+  );
+};
+
+const CartItem = ({ food, currentCategory }) => (
+  <div
+    className={styles["cart-item"]}
+    onClick={() => addEventTime(currentCategory, food)}
+  >
     <Image
       className={styles["item-img"]}
-      src={`/img/food/${img}.png`}
+      src={`/img/food/${food.img}.png`}
       width={95}
       height={95}
       alt=""
     />
-    <CartDetail name={name} intern={intern} extern={extern} />
+    <CartDetail name={food.name} intern={food.intern} extern={food.extern} />
   </div>
 );
 
-const CartList = ({ cartListItems }) => (
+const CartList = ({ items, currentCategory }) => (
   <Section title={"Platillos disponibles"}>
     <div className={styles["cart-list"]}>
-      {cartListItems.map(({ id, name, img, intern, extern }) => (
-        <CartItem
-          key={id}
-          name={name}
-          img={img}
-          intern={intern}
-          extern={extern}
-        />
+      {items.map((food) => (
+        <CartItem key={food.id} food={food} currentCategory={currentCategory} />
       ))}
     </div>
   </Section>
 );
 
-const CostumberSelector = ({ custumer, setCustomer, categories }) => (
-  <Section title={"Categorías"}>
-    <select
-      name="select"
-      value={custumer}
-      onChange={(e) => setCustomer(e.target.value)}
-    >
-      {categories.map(({ id, name }) => (
-        <option value={id}>{name}</option>
-      ))}
-    </select>
-  </Section>
-);
-
-export default function Sidebar({ custumer, setCustomer }) {
+export default function Sidebar({ currentEvent }) {
   const [cartListItems, setCartList] = useState([]);
-  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
     setCartList(data);
-    setCategories(datac);
-  }, []);
+  }, [cartListItems]);
 
   return (
     <div className={styles.wrapper}>
-      <CostumberSelector
-        categories={categories}
-        customer={custumer}
-        setCustomer={setCustomer}
-      />
-      <CartList cartListItems={cartListItems} />
+      <CartList items={cartListItems} currentCategory={currentEvent} />
     </div>
   );
 }

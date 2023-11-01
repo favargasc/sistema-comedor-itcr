@@ -3,7 +3,7 @@
   grid-row: 3;
   display: grid;
   grid-template-columns: repeat(4, 14.4rem);
-  grid-auto-rows: 14rem;
+  grid-auto-rows: 15rem;
   padding: 0.5rem 1rem;
   overflow-y: scroll;
   background-color: #f7f7f7;
@@ -41,7 +41,7 @@
 }
 
 .title {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 

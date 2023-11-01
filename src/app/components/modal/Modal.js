@@ -1,7 +1,7 @@
 import styles from "@/styles/modals/modal.module.css";
 import Image from "next/image";
 
-export default function Modal({ isOpen, closeModal, title, children }) {
+export default function Modal({ isOpen, closeModal, title, children, handle }) {
   return (
     <>
       {isOpen && (
@@ -21,7 +21,13 @@ export default function Modal({ isOpen, closeModal, title, children }) {
               <button className={styles["cancel-btn"]} onClick={closeModal}>
                 Cancelar
               </button>
-              <button className={styles["accept-btn"]}>Agregar</button>
+              <button
+                className={styles["accept-btn"]}
+                type="submit"
+                onClick={handle}
+              >
+                Agregar
+              </button>
             </div>
           </div>
         </div>

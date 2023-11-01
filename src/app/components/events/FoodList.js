@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "@/styles/events/foodlist.module.css";
-import data from "../../data/food.json";
+import data from "../../data/events.json";
 import { useEffect, useState } from "react";
 
 const PriceModule = ({ intern = 0, extern = 0 }) => (
@@ -12,49 +12,43 @@ const PriceModule = ({ intern = 0, extern = 0 }) => (
   </div>
 );
 
-const Details = ({ name, category, intern, extern }) => (
+const Details = ({ name, nameCategory, intern, extern }) => (
   <div className={styles["text-content"]}>
     <span className={styles.title}>{name}</span>
-    <span className={styles.subtitle}>{category}</span>
+    <span className={styles.subtitle}>{nameCategory}</span>
     <PriceModule intern={intern} extern={extern} />
   </div>
 );
 
-const FoodItem = ({ name, img, intern, extern }) => (
+const FoodItem = ({ food }) => (
   <div className={styles["food-item"]}>
     <Image
       className={styles["food-img"]}
-      src={`/img/food/${img}.png`}
+      src={`/img/food/${food.img}.png`}
       width={220}
       height={130}
       alt=""
     />
     <Details
-      name={name}
-      category={"Embutidos"}
-      intern={intern}
-      extern={extern}
+      name={food.name}
+      nameCategory={food.name_category}
+      intern={food.intern}
+      extern={food.extern}
     />
   </div>
 );
 
-export default function FoodList() {
+export default function FoodList({ currentEvent }) {
   const [foodList, setFoodList] = useState([]);
 
   useEffect(() => {
-    setFoodList(data);
-  }, []);
+    setFoodList(data.find((event) => event.id === currentEvent)?.food || []);
+  }, [foodList, currentEvent]);
 
   return (
     <div className={styles.wrapper}>
-      {foodList.map(({ id, name, img, intern, extern }) => (
-        <FoodItem
-          key={id}
-          name={name}
-          img={img}
-          intern={intern}
-          extern={extern}
-        />
+      {foodList.map((food) => (
+        <FoodItem food={food} />
       ))}
     </div>
   );
